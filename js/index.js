@@ -58,9 +58,13 @@ function displayProducts(results){
     });
 }
 
-$(document).on("pagebeforeshow", "#loadpage", function(){
+$(document).on("pagebeforeshow", "#loadpage", function(e){
+   
     productHandler.loadProducts(displayProducts);
 });
+
+
+
 
 function deleteProduct(){
     var r = confirm("Eliminar producto\nProducto: "+currentProduct.name+
