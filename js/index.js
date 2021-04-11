@@ -58,7 +58,7 @@ function displayProducts(results){
     });
 }
 
-$(document).on("pageshow", "#loadpage", function(){
+$(document).on("pagebeforehide", "#loadpage", function(){
    
     productHandler.loadProducts(displayProducts);
 });
